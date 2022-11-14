@@ -1,6 +1,6 @@
 # GodotPSX
 A small pack of shaders to replicate that old PS1 look in Godot 4.0.  
-The license allows it for permissive usage with attribution.
+They may not work under Godot 3.x due to the viewport revamp in Godot 4.0, but I doubt adapting them would be much trouble.
 
 ## Attributions
 Dithering and lit/unlit shaders are based on work by **Mighty Duke**, which was licensed under the CC0 license.
@@ -15,7 +15,8 @@ Refer to [this](USAGE.md) document for instructions.
 
 # License
 These shaders are licensed under the [MIT License](LICENSE).  
-This license allows you to use these shaders in your game, even if its closed-source software.
+This license allows you to use these shaders in your game, even if its closed-source software, as long as you keep the license and copyright notices
+for these shaders.
 
 And of course, it goes without saying:  
 
