@@ -41,14 +41,27 @@ render_mode unshaded, skip_vertex_transform, diffuse_lambert_wrap;
 uniform sampler2D albedo: hint_default_black, filter_nearest;
 uniform sampler2D emission: hint_default_black, filter_nearest;
 
+// The "jumpiness" of vertices.
 uniform float jitter: hint_range(0.0, 1.0) = 0.5;
+
+// If disabled, jitter will not affect the Z coordinate
+// of the vertex.
 uniform bool jitter_z_coordinate = true;
+
+// If disabled, makes vertices further away from the camera
+// less jittery.
 uniform bool jitter_depth_independent = true;
+
+// Enables the PS1 texture warping.
 uniform bool affine_texture_mapping = true;
+
+// Any alpha value below this will not be rendered.
 uniform float alpha_scissor: hint_range(0.0, 1.0) = 1.0;
 
+// Color to overlay on top of the albedo texture.
 uniform vec4 albedo_color: source_color = vec4(1.0);
 
+// Texture tiling.
 uniform vec2 texture_size = vec2(1.0);
 
 void vertex() {
@@ -82,8 +95,11 @@ void fragment() {
 	
 	uv /= texture_size;
 	
+	// Overlay albedo color with the albedo texture.
 	ALBEDO = albedo_color.rgb * texture(albedo, uv).rgb;
+	
 	ALPHA = texture(albedo, uv).a;
 	ALPHA_SCISSOR_THRESHOLD = alpha_scissor;
+	
 	EMISSION = texture(emission, uv).rgb;
 }
