@@ -10,6 +10,9 @@ Lit and unlit shaders are based on: https://godotshaders.com/shader/ps1-shader/
 
 Thanks to the [HauntedPS1](https://twitter.com/hauntedps1) community for inspiration and help with the Fade shader quantization.
 
+## Usage
+Refer to [this](USAGE.md) document for instructions.
+
 # License
 These shaders are licensed under the [MIT License](LICENSE).  
 This license allows you to use these shaders in your game, even if its closed-source software.
