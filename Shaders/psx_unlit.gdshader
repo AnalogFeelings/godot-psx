@@ -61,6 +61,9 @@ uniform float alpha_scissor: hint_range(0.0, 1.0) = 1.0;
 // Color to overlay on top of the albedo texture.
 uniform vec4 albedo_color: source_color = vec4(1.0);
 
+// Emission color.
+uniform vec4 emission_color: source_color = vec4(1.0);
+
 // Texture tiling.
 uniform vec2 texture_size = vec2(1.0);
 
@@ -101,5 +104,5 @@ void fragment() {
 	ALPHA = texture(albedo, uv).a;
 	ALPHA_SCISSOR_THRESHOLD = alpha_scissor;
 	
-	EMISSION = texture(emission, uv).rgb;
+	EMISSION = emission_color.rgb * texture(emission, uv).rgb;
 }
