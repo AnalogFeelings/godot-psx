@@ -11,9 +11,9 @@
 </div>
 
 A small pack of shaders to replicate that old PS1 look in Godot 4.0.  
-They may not work under Godot 3.x due to the viewport revamp in Godot 4.0, but I doubt adapting them would be much trouble.
+They may also work on Godot 3.x, but they haven't been tested. Proceed with caution!
 
-:warning: **Warning!** It seems per-vertex lighting is currently broken in Godot 4.0, so you may need to use 3.x to get vertex lighting.
+:warning: **Warning!** It seems per-vertex lighting is currently broken in Godot 4.0, so you may need to try to use 3.x to get vertex lighting.
 
 <div align="center">
   <h2>Attributions</h2>
