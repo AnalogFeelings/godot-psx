@@ -1,13 +1,13 @@
 <div align="center">
   <h1>GodotPSX</h1>
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/aestheticalz/godot-psx?label=Repo%20Size&style=flat-square)
-  ![GitHub issues](https://img.shields.io/github/issues/aestheticalz/godot-psx?label=Issues&style=flat-square)
-  ![GitHub pull requests](https://img.shields.io/github/issues-pr/aestheticalz/godot-psx?label=Pull%20Requests&style=flat-square)
-  ![GitHub](https://img.shields.io/github/license/aestheticalz/godot-psx?label=License&style=flat-square)
-  ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/aestheticalz/godot-psx?label=Commit%20Activity&style=flat-square)
-  ![GitHub repo file count (file extension)](https://img.shields.io/github/directory-file-count/aestheticalz/godot-psx/Shaders?extension=gdshader&label=Shader%20Count&style=flat-square&type=file)
-  ![GitHub Repo stars](https://img.shields.io/github/stars/aestheticalz/godot-psx?label=Stargazers&style=flat-square)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/analogfeelings/godot-psx?label=Repo%20Size&style=flat-square)
+  ![GitHub issues](https://img.shields.io/github/issues/analogfeelings/godot-psx?label=Issues&style=flat-square)
+  ![GitHub pull requests](https://img.shields.io/github/issues-pr/analogfeelings/godot-psx?label=Pull%20Requests&style=flat-square)
+  ![GitHub](https://img.shields.io/github/license/analogfeelings/godot-psx?label=License&style=flat-square)
+  ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/analogfeelings/godot-psx?label=Commit%20Activity&style=flat-square)
+  ![GitHub repo file count (file extension)](https://img.shields.io/github/directory-file-count/analogfeelings/godot-psx/Shaders?extension=gdshader&label=Shader%20Count&style=flat-square&type=file)
+  ![GitHub Repo stars](https://img.shields.io/github/stars/analogfeelings/godot-psx?label=Stargazers&style=flat-square)
 </div>
 
 A small pack of shaders to replicate that old PS1 look in Godot 4.0.  
