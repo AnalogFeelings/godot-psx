@@ -1,6 +1,6 @@
 # Usage Instructions
 Here are some usage instructions for this shader pack. If you have any extra questions (which I doubt), you can find me in the HauntedPS1 Discord server as
-the user with the nickname "AestheticalZ".
+the user with the name "Analog Feelings".
 
 ## For Lit/Unlit shader
 Apply the shader as a material override for any mesh instance.  
