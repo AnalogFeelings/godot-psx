@@ -1,20 +1,20 @@
-//*** *** *** *** *** *** *** *** *** *** *** ***//
-//*** ===  PSX lit surface shader effect  === ***//
-//*** ===          For Godot 4.0          === ***//
-//*** ===         By AestheticalZ         === ***//
-//*** === https://github.com/AestheticalZ === ***//
-//*** *** *** *** *** *** *** *** *** *** *** ***//
-//*** ===       Licensed under the:       === ***//
-//*** ===           MIT License           === ***//
-//*** *** *** *** *** *** *** *** *** *** *** ***//
-//*** ===    Derived from CC0 work by:    === ***//
-//*** ===           Mighty Duke           === ***//
-//*** *** *** *** *** *** *** *** *** *** *** ***//
+//*** *** *** *** *** *** *** *** *** *** ***    ***//
+//*** ===  PSX lit surface shader effect     === ***//
+//*** ===          For Godot 4.0             === ***//
+//*** ===         By Analog Feelings         === ***//
+//*** === https://github.com/AnalogFeelings  === ***//
+//*** *** *** *** *** *** *** *** *** *** ***    ***//
+//*** ===       Licensed under the:          === ***//
+//*** ===           MIT License              === ***//
+//*** *** *** *** *** *** *** *** *** *** ***    ***//
+//*** ===    Derived from CC0 work by:       === ***//
+//*** ===           Mighty Duke              === ***//
+//*** *** *** *** *** *** *** *** *** *** ***    ***//
 
 /*****************************************************************************
 MIT License
 
-Copyright (c) 2022 AestheticalZ
+Copyright (c) 2022 AnalogFeelings
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
