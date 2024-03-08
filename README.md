@@ -14,7 +14,7 @@ A small pack of shaders to replicate that old PS1 look in Godot 4.0.
 They may also work on Godot 3.x, but they haven't been tested. Proceed with caution!
 
 > [!WARNING]  
-> It seems per-vertex lighting is currently broken in Godot 4.0, so you may need to try to use 3.x to get vertex lighting.
+> Per-vertex lighting is currently broken in Godot 4.x, so use 3.x or wait until 4.3 releases.
 
 ## :wave: Attributions
 
@@ -29,7 +29,7 @@ Thanks to the [HauntedPS1](https://twitter.com/hauntedps1) community for inspira
 
 Refer to [this](USAGE.md) document for instructions.
 
-## :balance_scale: License
+# :balance_scale: License
 
 These shaders are licensed under the [MIT License](LICENSE).  
 This license allows you to use these shaders in your game, even if its closed-source software, as long as you keep the license and copyright notices
@@ -47,6 +47,7 @@ SOFTWARE.
 # :framed_picture: Screenshots
 
 ![image](https://user-images.githubusercontent.com/51166756/201708781-582df4c4-78ff-4bb7-b960-d22b67e1c639.png)  
+![image](https://github.com/AnalogFeelings/godot-psx/assets/51166756/de9c4c15-e188-4579-9d96-8a8cddaa7654)
 ![image](https://user-images.githubusercontent.com/51166756/201708887-56fdf30b-364e-4b53-ad9f-53be5d341712.png)  
 ![image](https://user-images.githubusercontent.com/51166756/201708944-448af1fd-7ff6-45ac-98eb-14b3c3ece93a.png)
 
