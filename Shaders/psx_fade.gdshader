@@ -35,8 +35,9 @@ SOFTWARE.
 shader_type canvas_item;
 
 // 0 = No fade.
-// 255 = Totally dark.
+// 255 = Totally faded out.
 uniform int alpha: hint_range(0, 255);
+uniform bool fadeToWhite = false;
 
 void fragment() {
 	vec3 color = texelFetch(TEXTURE, ivec2(FRAGCOORD.xy), 0).rgb;
@@ -48,5 +49,8 @@ void fragment() {
 	decimal_alpha = floor(decimal_alpha * 32.0) / 32.0;
 	
 	// Equal to GL_FUNC_REVERSE_SUBTRACT.
-	COLOR.rgb = color - vec3(decimal_alpha);
+	if(!fadeToWhite)
+		COLOR.rgb = color - vec3(decimal_alpha);
+	else
+		COLOR.rgb = color + vec3(decimal_alpha);
 }
