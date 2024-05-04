@@ -14,7 +14,7 @@ A small pack of shaders to replicate that old PS1 look in Godot 4.0.
 They may also work on Godot 3.x, but they haven't been tested. Proceed with caution!
 
 > [!WARNING]  
-> Gouraud shading is currently broken in Godot 4.x, so use 3.x or wait until 4.3 releases if you need it.
+> Gouraud shading is currently broken in Godot 4.x, so use 3.x or wait until 4.4 releases if you need it.
 
 ## :wave: Attributions
 
