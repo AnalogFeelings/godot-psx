@@ -12,7 +12,8 @@ A small pack of shaders to replicate that old PS1 look in Godot 4.0.
 They may also work on Godot 3.x, but they haven't been tested. Proceed with caution!
 
 > [!WARNING]  
-> Gouraud shading is currently broken in Godot 4.x, so use 3.x or wait until 4.4 releases if you need it.
+> Gouraud shading is currently broken in Godot 4.x, so use 3.x or wait until 4.4 releases if you need it.  
+> Progress on the pull request can be tracked at [godotengine/godot#83360](https://github.com/godotengine/godot/pull/83360).
 
 ## :wave: Attributions
 
@@ -25,7 +26,16 @@ Thanks to the [HauntedPS1](https://twitter.com/hauntedps1) community for inspira
 
 ## :thinking: Usage
 
-Refer to [this](USAGE.md) document for instructions.
+Refer to [this](USAGE.md) document for instructions.  
+Of course, you'll require a basic understanding on importing and using shaders.
+
+# :framed_picture: Screenshots
+
+![image](https://user-images.githubusercontent.com/51166756/201708781-582df4c4-78ff-4bb7-b960-d22b67e1c639.png)  
+![image](https://github.com/AnalogFeelings/godot-psx/assets/51166756/de9c4c15-e188-4579-9d96-8a8cddaa7654)
+![image](https://user-images.githubusercontent.com/51166756/201708887-56fdf30b-364e-4b53-ad9f-53be5d341712.png)  
+![image](https://user-images.githubusercontent.com/51166756/201708944-448af1fd-7ff6-45ac-98eb-14b3c3ece93a.png)
+
 
 # :balance_scale: License
 
@@ -41,11 +51,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-# :framed_picture: Screenshots
-
-![image](https://user-images.githubusercontent.com/51166756/201708781-582df4c4-78ff-4bb7-b960-d22b67e1c639.png)  
-![image](https://github.com/AnalogFeelings/godot-psx/assets/51166756/de9c4c15-e188-4579-9d96-8a8cddaa7654)
-![image](https://user-images.githubusercontent.com/51166756/201708887-56fdf30b-364e-4b53-ad9f-53be5d341712.png)  
-![image](https://user-images.githubusercontent.com/51166756/201708944-448af1fd-7ff6-45ac-98eb-14b3c3ece93a.png)
-
