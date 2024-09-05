@@ -1,14 +1,12 @@
-<div align="center">
-  <h1>:tv: GodotPSX</h1>
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/analogfeelings/godot-psx?label=Repo%20Size&style=flat-square)
-  [![GitHub issues](https://img.shields.io/github/issues/analogfeelings/godot-psx?label=Issues&style=flat-square)](https://github.com/AnalogFeelings/godot-psx/issues)
-  [![GitHub pull requests](https://img.shields.io/github/issues-pr/analogfeelings/godot-psx?label=Pull%20Requests&style=flat-square)](https://github.com/AnalogFeelings/godot-psx/pulls)
-  [![GitHub](https://img.shields.io/github/license/analogfeelings/godot-psx?label=License&style=flat-square)](https://github.com/AnalogFeelings/godot-psx/blob/master/LICENSE)
-  [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/analogfeelings/godot-psx/master?label=Commit%20Activity&style=flat-square)](https://github.com/AnalogFeelings/godot-psx/graphs/commit-activity)
-  [![GitHub Repo stars](https://img.shields.io/github/stars/analogfeelings/godot-psx?label=Stargazers&style=flat-square)](https://github.com/AnalogFeelings/godot-psx/stargazers)
-  [![Mastodon Follow](https://img.shields.io/mastodon/follow/109309123442839534?domain=https%3A%2F%2Ftech.lgbt&style=social)](https://tech.lgbt/@analog_feelings)
-</div>
+# :tv: GodotPSX
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AnalogFeelings/godot-psx?style=flat-square&logo=github&label=Repo%20Size)
+[![GitHub issues](https://img.shields.io/github/issues/analogfeelings/godot-psx?style=flat-square&logo=github&label=Issues)](https://github.com/AnalogFeelings/godot-psx/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/analogfeelings/godot-psx?label=Pull%20Requests&style=flat-square&logo=github)](https://github.com/AnalogFeelings/godot-psx/pulls)
+[![GitHub](https://img.shields.io/github/license/analogfeelings/godot-psx?label=License&style=flat-square&logo=opensourceinitiative&logoColor=white)](https://github.com/AnalogFeelings/godot-psx/blob/master/LICENSE)
+[![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/analogfeelings/godot-psx/master?label=Commit%20Activity&style=flat-square&logo=github)](https://github.com/AnalogFeelings/godot-psx/graphs/commit-activity)
+[![GitHub Repo stars](https://img.shields.io/github/stars/analogfeelings/godot-psx?label=Stargazers&style=flat-square&logo=github)](https://github.com/AnalogFeelings/godot-psx/stargazers)
+[![Mastodon Follow](https://img.shields.io/mastodon/follow/109309123442839534?domain=https%3A%2F%2Ftech.lgbt%2F&style=flat-square&logo=mastodon&logoColor=white&label=Follow%20Me!&color=6364ff)](https://tech.lgbt/@analog_feelings)
 
 A small pack of shaders to replicate that old PS1 look in Godot 4.0.  
 They may also work on Godot 3.x, but they haven't been tested. Proceed with caution!
