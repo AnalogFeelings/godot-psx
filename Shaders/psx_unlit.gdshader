@@ -55,6 +55,9 @@ uniform bool jitter_depth_independent = true;
 // Enables the PS1 texture warping.
 uniform bool affine_texture_mapping = true;
 
+// Control the amount of distortion on the texture warping
+uniform float affine_texture_intensity: hint_range(-2.0, 0.0) = -2.0;
+
 // Any alpha value below this will not be rendered.
 uniform float alpha_scissor: hint_range(0.0, 1.0) = 1.0;
 
@@ -85,7 +88,8 @@ void vertex() {
 	}
 
 	if (affine_texture_mapping) {
-		UV *= VERTEX.z;
+		UV.x *= (1.0 + (VERTEX.z * affine_texture_intensity));
+        UV.y *= (1.0 + (VERTEX.z * affine_texture_intensity));
 	}
 }
 
@@ -93,7 +97,8 @@ void fragment() {
 	vec2 uv = UV;
 	
 	if (affine_texture_mapping) {
-		uv /= VERTEX.z;
+		uv.x /= (1.0 + (VERTEX.z * affine_texture_intensity));
+        uv.y /= (1.0 + (VERTEX.z * affine_texture_intensity));
 	}
 	
 	uv /= texture_size;
