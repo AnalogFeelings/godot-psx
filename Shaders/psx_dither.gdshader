@@ -41,6 +41,10 @@ uniform int color_depth : hint_range(1, 8) = 5;
 uniform bool dithering = true;
 uniform int resolution_scale = 4;
 
+int max_value_from_bits(int bits) {
+	return (1 << bits) - 1;
+}
+
 int dithering_pattern(ivec2 fragcoord) {
 	const int pattern[] = {
 		-4, +0, -3, +1, 
@@ -60,16 +64,16 @@ void fragment() {
 	vec3 color = texelFetch(TEXTURE, uv * resolution_scale, 0).rgb;
 	
 	// Convert from 0 to 1 to 0 to 255.
-	ivec3 c = ivec3(round(color * 255.0));
-	
+	ivec3 c = ivec3(color * 255.0f);
+	int bitshift = (8 - color_depth);
+	int maxColor = max_value_from_bits(color_depth);
+		
 	// Apply the dithering.
 	if (dithering) {
-		c += ivec3(dithering_pattern(uv));
+		ivec3 ditherApplied = c + ivec3(dithering_pattern(uv));
+		c = ivec3(clamp(ditherApplied >> bitshift, 0, maxColor));
 	}
-	
-	// Truncate from 8 bits to color_depth bits.
-	c >>= (8 - color_depth);
 
 	// Convert back to 0 to 1.
-	COLOR.rgb = vec3(c) / float(1 << color_depth);
+	COLOR.rgb = vec3(c) / float(maxColor);
 }

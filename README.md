@@ -31,11 +31,9 @@ Of course, you'll require a basic understanding on importing and using shaders.
 
 # :framed_picture: Screenshots
 
-![image](https://user-images.githubusercontent.com/51166756/201708781-582df4c4-78ff-4bb7-b960-d22b67e1c639.png)  
-![image](https://github.com/AnalogFeelings/godot-psx/assets/51166756/de9c4c15-e188-4579-9d96-8a8cddaa7654)
-![image](https://user-images.githubusercontent.com/51166756/201708887-56fdf30b-364e-4b53-ad9f-53be5d341712.png)  
-![image](https://user-images.githubusercontent.com/51166756/201708944-448af1fd-7ff6-45ac-98eb-14b3c3ece93a.png)
-
+![normal](./Screenshots/normal.png)  
+![fade to white](./Screenshots/fadetowhite.png)
+![fade to black](./Screenshots/fadetoblack.png) 
 
 # :balance_scale: License
 
