@@ -17,9 +17,10 @@ They may also work on Godot 3.x, but they haven't been tested. Proceed with caut
 
 ## :wave: Attributions
 
-Dithering and lit/unlit shaders are based on work by **Mighty Duke**, which was licensed under the CC0 license.
+Lit and unlit shaders are based on work by **Mighty Duke**, which is licensed under the CC0 license.  
+Dithering shader is based on work by the **Duckstation** emulator team.
 
-Dithering shader is based on: https://godotshaders.com/shader/ps1-post-processing/  
+Dithering shader is based on: https://github.com/stenzek/duckstation/blob/master/src/core/gpu_hw_shadergen.cpp  
 Lit and unlit shaders are based on: https://godotshaders.com/shader/ps1-shader/
 
 Thanks to the [HauntedPS1](https://twitter.com/hauntedps1) community for inspiration and help with the Fade shader quantization.
