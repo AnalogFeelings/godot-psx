@@ -39,7 +39,6 @@ shader_type canvas_item;
 
 uniform int color_depth : hint_range(1, 8) = 5;
 uniform bool dithering = true;
-uniform int resolution_scale = 4;
 
 int max_value_from_bits(int bits) {
 	return (1 << bits) - 1;
@@ -60,20 +59,23 @@ int dithering_pattern(ivec2 fragcoord) {
 }
 
 void fragment() {
-	ivec2 uv = ivec2(FRAGCOORD.xy / float(resolution_scale));
-	vec3 color = texelFetch(TEXTURE, uv * resolution_scale, 0).rgb;
+	ivec2 uv = ivec2(FRAGCOORD.xy);
+	vec3 color = texelFetch(TEXTURE, uv, 0).rgb;
 	
 	// Convert from 0 to 1 to 0 to 255.
-	ivec3 c = ivec3(color * 255.0f);
+	ivec3 intColor = ivec3(color * 255.0f);
 	int bitshift = (8 - color_depth);
 	int maxColor = max_value_from_bits(color_depth);
 		
 	// Apply the dithering.
 	if (dithering) {
-		ivec3 ditherApplied = c + ivec3(dithering_pattern(uv));
-		c = ivec3(clamp(ditherApplied >> bitshift, 0, maxColor));
+		ivec3 ditherApplied = intColor + ivec3(dithering_pattern(uv));
+		intColor = clamp(ditherApplied >> bitshift, 0, maxColor);
 	}
-
+	else {
+		intColor = clamp(intColor >> bitshift, 0, maxColor);
+	}
+	
 	// Convert back to 0 to 1.
-	COLOR.rgb = vec3(c) / float(maxColor);
+	COLOR.rgb = vec3(intColor) / float(maxColor);
 }
