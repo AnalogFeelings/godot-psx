@@ -8,12 +8,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/analogfeelings/godot-psx?label=Stargazers&style=flat-square&logo=github)](https://github.com/AnalogFeelings/godot-psx/stargazers)
 [![Mastodon Follow](https://img.shields.io/mastodon/follow/109309123442839534?domain=https%3A%2F%2Ftech.lgbt%2F&style=flat-square&logo=mastodon&logoColor=white&label=Follow%20Me!&color=6364ff)](https://tech.lgbt/@analog_feelings)
 
-A small pack of shaders to replicate that old PS1 look in Godot 4.0.  
-They may also work on Godot 3.x, but they haven't been tested. Proceed with caution!
-
-> [!WARNING]  
-> Gouraud shading is currently broken in Godot 4.x, so use 3.x or wait until 4.4 releases if you need it.  
-> Progress on the pull request can be tracked at [godotengine/godot#83360](https://github.com/godotengine/godot/pull/83360).
+A small pack of shaders to replicate that old PS1 look in Godot 4.x.
 
 ## :wave: Attributions
 
